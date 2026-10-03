@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cirxt0mirjg2r"
-path="res://.godot/imported/1000047076.png-b7901468b9c3db4e88a49753113044f3.ctex"
+uid="uid://cgbs2fy2npflc"
+path="res://.godot/imported/Impulse_Command_Block_JE1.png-7564bb8b47c108e5534911af9c4dc633.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://1000047076.png"
-dest_files=["res://.godot/imported/1000047076.png-b7901468b9c3db4e88a49753113044f3.ctex"]
+source_file="res://assets/Impulse_Command_Block_JE1.png"
+dest_files=["res://.godot/imported/Impulse_Command_Block_JE1.png-7564bb8b47c108e5534911af9c4dc633.ctex"]
 
 [params]
 

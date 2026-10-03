@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://dptqmtay4plwp" path="res://assets/game/backgrounds/cloud_trees.png" id="2_m18yi"]
 [ext_resource type="Texture2D" uid="uid://dys7320ghojh6" path="res://assets/game/backgrounds/cloud_hills.png" id="3_c7dcd"]
 [ext_resource type="Texture2D" uid="uid://1b8hp0rm864l" path="res://assets/game/backgrounds/cloud_right.png" id="4_edvbp"]
-[ext_resource type="PackedScene" uid="uid://dhgrvfyxlwthg" path="res://command_block.tscn" id="5_2f3dj"]
+[ext_resource type="PackedScene" uid="uid://dhgrvfyxlwthg" path="res://scenes/command_block.tscn" id="5_2f3dj"]
 [ext_resource type="TileSet" uid="uid://dkowcf1ljh41j" path="res://assets/game/tilesets/kenney_terrain_tileset.tres" id="5_4etix"]
 [ext_resource type="PackedScene" uid="uid://dnqjb3pfqv44w" path="res://scenes/ladder.tscn" id="7_pm3ni"]
 [ext_resource type="PackedScene" uid="uid://c1u8k6ny02t4y" path="res://scenes/player.tscn" id="9_bauo3"]
