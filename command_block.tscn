@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://dhgrvfyxlwthg"]
+
+[ext_resource type="Script" uid="uid://cclpfji73m2ij" path="res://command_block.gd" id="1_lci3m"]
+[ext_resource type="Texture2D" uid="uid://cgbs2fy2npflc" path="res://Impulse_Command_Block_JE1.png" id="2_i84hk"]
+[ext_resource type="Script" uid="uid://bjkodoqrtsdmr" path="res://label.gd" id="3_r7ybg"]
+[ext_resource type="Texture2D" uid="uid://cirxt0mirjg2r" path="res://1000047076.png" id="4_i84hk"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xtrpm"]
+
+[node name="Command_Block" type="Area2D" unique_id=1764412499 node_paths=PackedStringArray("label", "notch", "block")]
+collision_mask = 3
+script = ExtResource("1_lci3m")
+label = NodePath("Label")
+notch = NodePath("Notch")
+block = NodePath("Sprite2D")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1909572653]
+scale = Vector2(0.08, 0.08)
+texture = ExtResource("2_i84hk")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=856597161]
+shape = SubResource("RectangleShape2D_xtrpm")
+
+[node name="Label" type="Label" parent="." unique_id=1920483516]
+offset_left = -67.0
+offset_top = -27.000002
+offset_right = 93.0
+offset_bottom = -4.000002
+scale = Vector2(0.8392844, 0.8164886)
+text = "双击空格开启创造模式"
+script = ExtResource("3_r7ybg")
+
+[node name="Notch" type="Sprite2D" parent="." unique_id=891034040]
+visible = false
+position = Vector2(4, -4)
+scale = Vector2(0.07, 0.07)
+texture = ExtResource("4_i84hk")

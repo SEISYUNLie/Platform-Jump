@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://jbye06it1ov5"]
+
+[ext_resource type="Script" uid="uid://dffa4gfegesjp" path="res://scenes/prefabs/interactables/spring_red.gd" id="1_i3l3r"]
+[ext_resource type="Texture2D" uid="uid://b7wkoed3ty7em" path="res://assets/game/interactables/spring_red.png" id="1_texture"]
+
+[sub_resource type="RectangleShape2D" id="Shape_spring"]
+size = Vector2(14, 6)
+
+[node name="SpringRed" type="Area2D" unique_id=742449581 groups=["spring"]]
+collision_layer = 8
+collision_mask = 2
+script = ExtResource("1_i3l3r")
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=183929814]
+texture_filter = 1
+texture = ExtResource("1_texture")
+
+[node name="ActivationArea" type="CollisionShape2D" parent="." unique_id=716768850]
+position = Vector2(0, -2)
+shape = SubResource("Shape_spring")

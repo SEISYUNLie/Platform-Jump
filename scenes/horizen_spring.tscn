@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://dxr208n1trq8a"]
+
+[ext_resource type="Script" uid="uid://bibf255rv8r4t" path="res://scripts/horizen_spring.gd" id="1_i1git"]
+[ext_resource type="Texture2D" uid="uid://80q4nidlih65" path="res://assets/kenney/tiles/tile_0107.png" id="2_i1git"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xtrpm"]
+size = Vector2(5, 16)
+
+[node name="horizen_spring" type="Area2D" unique_id=1107435615]
+collision_mask = 3
+script = ExtResource("1_i1git")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=954712945]
+position = Vector2(5, 0)
+rotation = 1.5707964
+texture = ExtResource("2_i1git")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=189041955]
+position = Vector2(3, 0)
+shape = SubResource("RectangleShape2D_xtrpm")

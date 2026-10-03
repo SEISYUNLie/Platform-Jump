@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://70xdk4q8sa6o"]
+
+[ext_resource type="Script" uid="uid://cbh3alwjyg4u0" path="res://scripts/button.gd" id="1_3q610"]
+[ext_resource type="Texture2D" uid="uid://dxhrjf4pn67cm" path="res://assets/kenney/tiles/tile_0148.png" id="2_i7y4x"]
+[ext_resource type="Texture2D" uid="uid://b2io5pgawh4pr" path="res://assets/kenney/tiles/tile_0149.png" id="3_1bdt2"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xtrpm"]
+size = Vector2(24, 20)
+
+[node name="Button" type="Area2D" unique_id=1567474226 node_paths=PackedStringArray("ok", "nook")]
+script = ExtResource("1_3q610")
+ok = NodePath("ok")
+nook = NodePath("nook")
+
+[node name="ok" type="Sprite2D" parent="." unique_id=808882749]
+texture = ExtResource("2_i7y4x")
+
+[node name="nook" type="Sprite2D" parent="." unique_id=1516027891]
+texture = ExtResource("3_1bdt2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=278581740]
+shape = SubResource("RectangleShape2D_xtrpm")

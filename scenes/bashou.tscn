@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://bof8b4hbutp3r"]
+
+[ext_resource type="Script" uid="uid://hqjfwm6g6n2d" path="res://scripts/climb.gd" id="1_gr47n"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xtrpm"]
+size = Vector2(9, 18)
+
+[node name="bashou" type="Area2D" unique_id=1972429983]
+collision_mask = 3
+script = ExtResource("1_gr47n")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1860907114]
+position = Vector2(-4.5, 0)
+shape = SubResource("RectangleShape2D_xtrpm")

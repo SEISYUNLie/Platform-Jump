@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://jxdmer6b4bgt"]
+
+[ext_resource type="Script" uid="uid://dmo6gf7nah07f" path="res://scripts/flag.gd" id="1_l1sgl"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xtrpm"]
+
+[node name="Flag" type="Area2D" unique_id=1041418518 node_paths=PackedStringArray("label")]
+collision_mask = 3
+script = ExtResource("1_l1sgl")
+label = NodePath("Label")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=7464851]
+shape = SubResource("RectangleShape2D_xtrpm")
+
+[node name="Label" type="Label" parent="." unique_id=562263317]
+offset_left = -18.999998
+offset_top = -20.0
+offset_right = 77.0
+offset_bottom = 3.0
+scale = Vector2(0.42871976, 0.43396875)
+theme_override_colors/font_color = Color(0.9286286, 0.50334245, 0.30297205, 1)
+text = "重生点已设置"
